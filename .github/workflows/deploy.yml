@@ -1,0 +1,13 @@
+name: deploy to s3
+
+on:
+    push:
+        branches:
+            - main1
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v2
